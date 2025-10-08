@@ -1,0 +1,36 @@
+First I learned html and basic css then I learned js. My first project was a chess hotseat app that I built with pure js css and html. It was 1000 lines long. It had all the rules like en passant and detected checkmate and check, also castling. My second project was a sudoku generator. I got interested in creating my own algorithms after I designed my own chess algo basically. 
+
+Then I made a bot thats job was to see if there were new housing listings inside a catchment area. it used d3geo or whatever its called and it downloaded a JSON file and compared it. It was pretty ingenious considering it was my second project. It actually got use. I don't like to show it because it was so early on my JS journey. I wrote it in node. 
+I must have gotten pretty good at programming. I mean it was all sphgetti code, but I had a knack for it. I made this sudoku generator and the algo was completely mad but it worked. It has a nice frontend, where I learned about the DOM and html nodes. After that I met a friend who is a backend ruby on rails dev. He worked with me for a few months and taught me git and the CLI. We did practice GIT stuff with my old portfolio website that we created using ruby and this static site generator called middleman. 
+
+I started to learn VIM and moved away from VScode. Learning neovim was quite the learning curve but it kept me close to the CLI which I liked and it taught me a ton of stuff.
+
+Then I made a checkers APP. its pretty nice and polished. Its online and works with a node backend, using socket IO and react. It was just JS not typescript. That was my first real experience with react. its 2 player with a full chat interface and all that. Not a bad project.  I don't like showing it because it was so early in my react journey but on the surface it looks great.
+
+Then I made an app for my kid that helped him learn to read. It was with react-native. Yeah it was an android app that I had to build into the apk. It was cool and I learned a bit about APIS.
+
+Then I remade that app in normal react. I started to learn Typescript. so that project was done in typescript. 
+
+Then I got into java and spring boot. I wrote a program using JAVA spring boot with a react front end that was like a fancy to do list. I started using docker then too. I didnt do a lot of java after that, but I did like using it. I just found it cumbersome for personal use. 
+
+Then I got into C and started doing basic algo stuff like linked lists and binary trees backtracking etc. I made a few CLI programs. My favourite is the wordsearch generator.
+
+Then I made a snake program using basic TS and html/css it was cool cuz it used a linked list. 
+
+Then I started working at the tech coop and learned legacy php and got a feel for a larger code base. My skills at reading code got better. I learned about ssh and a bunch of networking concepts like external ports and poools and all that stuff. I helped people with a lot of basic stuff too. I wrote some php plugins.
+
+At the coop I also learned some python and worked. I started to make some python backend stuff for like compiling lists of words how I wanted, or communicating with google for text to voice or whatever. 
+
+Around this time I started working with LLMS more and learning how to get somethings done with them. 
+
+Also I was learning to deploy my apps with things like netlify. I created some ec2 instances on AWS and hosted some t hings. I learned about things like pm2 or docker. 
+
+Then I started self hosting things. Jellyfin navidrome immich etc. I started to learn more about nginx and things like cloudflare. I made my own server at home and put it behind a VPN. 
+
+Then I got into n8n. I got into agentic AI agents. I wanted a frontend for my chats. I wanted a real fullstack app with user auth that was actually secure. SO I got into supabase and supabase auth. I learned about javascript tokens and how to authenticate users. Also along the way. I had worked with Postgres at the COOP. So I had SQL eperience. Id say that about sums it up. Im sure there is stuff I am missing but those are important key phases.
+
+
+
+
+
+

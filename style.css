@@ -1,0 +1,258 @@
+:root {
+  --bg: #fefcf7;
+  --text: #2a2a2a;
+  --header-footer-bg: #fdf6e3;
+  --header-footer-text: #2a2a2a;
+  --link: #d97706;
+  --link-hover: #92400e;
+  --heading: #78350f;
+  --brand: #d97706;   /* name color (Solarized amber) */
+  --brand: #374151;
+}
+:root {
+  --bg: #fefefe;          /* clean light background */
+  --text: #1f2933;        /* dark slate for body text */
+  --header-footer-bg: #e6f6f9; /* very pale teal wash */
+  --header-footer-text: #0b667d; /* main teal */
+  --link: #0b667d;        /* anchor link color */
+  --link-hover: #084c5d;  /* darker teal hover */
+  --heading: #0b667d;     /* headings in main teal */
+  --brand: #374151;
+}
+
+
+body.dark {
+  --bg: #1a1b26;
+  --text: #c0caf5;
+  --header-footer-bg: #24283b;
+  --header-footer-text: #c0caf5;
+  --link: #7aa2f7;
+  --link-hover: #bb9af7;
+  --heading: #bb9af7;
+  --brand: #7dcfff;   /* name color (Tokyo Night cyan) */
+}
+
+/* ========== Shared Styles ========== */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header, footer {
+  padding: 1rem;
+  background: var(--header-footer-bg);
+  text-align: center;
+  color: var(--header-footer-text);
+}
+
+footer {
+  padding-top: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 70ch;       /* ~65–75 characters per line */
+  margin: 0 auto;
+  min-width: 640px;      /* desktop minimum */
+  line-height: 1.6;      /* comfortable line spacing */
+}
+
+/* Paragraph spacing */
+main p {
+  margin: 1rem 0;        /* space between paragraphs */
+}
+
+/* On mobile, allow shrinking and add side padding */
+@media (max-width: 640px) {
+  main {
+    min-width: auto;
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* On very large screens, allow a bit more line length */
+@media (min-width: 1200px) {
+  main {
+    max-width: 80ch;
+  }
+}
+/* Paragraph spacing */
+main p {
+  margin: 1rem 0; /* full spacing for text blocks */
+}
+
+/* List styling */
+main ul {
+  margin: 0.75rem 0;   /* slightly less than paragraphs */
+  padding-left: 1.25rem; /* indent bullets a bit */
+}
+
+main li {
+  margin: 0.35rem 0;   /* tighter spacing between items */
+  line-height: 1.5;    /* slightly denser than body text */
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: var(--link);
+  padding: 0.25rem 0;
+  transition: color 0.2s ease; /* so the text color animates smoothly */
+  user-select: none;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--link-hover);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--link-hover); /* 👈 now the text itself changes color */
+}
+
+nav a:hover::after {
+  opacity: 1;
+}main a {
+  text-decoration: none;
+  color: var(--link);
+  transition: color 0.2s ease;
+}
+
+main a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+
+h1 {
+  color: var(--brand);
+}
+
+h2, h3 {
+  color: var(--heading);
+  margin-top: 0;
+}
+
+/* Base layout */
+header {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Hamburger button */
+.hamburger {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: var(--header-footer-bg);
+  color: var(--text);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+ul li strong {
+  font-weight: 600;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--header-footer-bg);
+  color: var(--text);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+
+/* Nav styling */
+nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+section {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+
+/* Next Link*/
+.next-link {
+  margin-top: 2rem;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.next-link a {
+  text-decoration: none;
+  color: var(--link);
+  transition: color 0.2s ease;
+}
+
+.next-link a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+
+/* Mobile: hide nav until menu opens */
+@media (max-width: 640px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: var(--header-footer-bg);
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  }
+  nav.open {
+    display: flex;
+  }
+}
+
